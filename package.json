@@ -1,0 +1,21 @@
+{
+  "name": "etsy-optimizer",
+  "version": "1.0.0",
+  "description": "Etsy listing optimizer + Pinterest pinner. Scrape, optimize titles/tags/descriptions/alt-text, apply changes, and pin to Pinterest.",
+  "scripts": {
+    "scrape": "node scrape.js",
+    "optimize": "node optimize.js",
+    "optimize:all": "node optimize_all.js",
+    "apply": "node apply.js",
+    "pinterest:scrape": "node pinterest_scrape.js",
+    "pin": "node pin.js",
+    "pinterest:auth": "node pinterest_auth.js",
+    "pinterest:board": "node pinterest_board.js",
+    "pinterest:post": "node pinterest_post.js",
+    "pinterest:dry-run": "node pinterest_post.js --dry-run"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "playwright": "^1.50.0"
+  }
+}
